@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.planer-container {
+    width: 1000px;
+    height: 80vh;
+    display: flex;
+}
+
+.status {
+    width: 25%;
+    background-color: #d9d4d4fb;
+    position: relative;
+    padding: 60px 0.5rem 1rem;
+}
+
+.status:nth-child(even) {
+    background-color: #cbc8c890;
+}
+
+.status h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ac1395;
+    color: #f3f3f3;
+    margin: 0;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+#add_btn {
+    padding: 0.5rem 1rem;
+    background-color: #0596bb;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 1.5rem;
+    color:#f3f3f3;
+    margin: 0.5rem 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add_btn:hover {
+    background-color: #066378;
+}
+
+.einheit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #ffff;
+    box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px,
+    rgba(15, 15, 15, 0.1) 0px 2px 4px;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+.einheit .close {
+    position: absolute;
+    top: 0rem;
+    right:1rem;
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.einheit .close:hover {
+    color: #343443;
+}
