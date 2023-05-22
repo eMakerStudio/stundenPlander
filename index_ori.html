@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Stundenplaner</title>
+  </head>
+  <body>
+    <!-- modal -->
+    <div class="modal" id="planer_form">
+      <div class="header">
+        <div class="title">UE hinzufügen</div>
+        <button class="btn close-modal">&times;</button>
+      </div>
+      <div class="body">
+        <input type="text" id="planer_input" />
+        <input type="submit" value="UE hinzufügen" id="planer_submit" />
+      </div>
+    </div>
+    <!-- planer container -->
+    <div class="planer-container">
+      <div class="status" id="no_status">
+        <h1>UE</h1>
+        <button id="add_btn" data-target-modal="#planer_form">+ Neue UE</button>
+        <div class="einheit" draggable="true">
+          Kursstart, Modul 03
+          <span class="close">&times;</span>
+        </div>
+      </div>
+      <div class="status">
+        <h1>Jetzt</h1>
+      </div>
+      <div class="status">
+        <h1>Später</h1>
+      </div>
+      <div class="status">
+        <h1>Fertig</h1>
+      </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
